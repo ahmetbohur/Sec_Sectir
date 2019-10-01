@@ -1,0 +1,1244 @@
+body, html {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d7722c;
+  margin: 0;
+  font-family: Arial;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Yandaki kaydırma şeysi bunları sonra düzenle*/
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #883000;
+  border-left: 2px solid #883000;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #d7722c;
+}
+
+/* Ara */
+#ara_ac_kapa_button:hover{
+  color: #000000
+}
+#ara_dis{
+  width: 890px;
+  height: auto;
+  margin: 0 auto;
+  z-index: 20;
+  overflow: hidden;
+}
+#ara_main_dis{
+  width: 500px;
+  height: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-top: 0px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: block;
+}
+#ara_main_dis input{
+  width: 416px;
+  height: 26px;
+  margin: 10px 5px 10px 10px;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  color: #883000;
+}
+#ara_main_dis button{
+  width: 50px;
+  height: 30px;
+  color: #883000;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-radius: 7px;
+}
+#ara_main_dis button:Hover{
+  color: #000000;
+  cursor: pointer;
+}
+#arama_sonuclari{
+  width: 890px;
+  float: left;
+  display: block;
+}
+#ara_kullanici_dis{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  float: left;
+  width: 886px;
+  display: block;
+  height: auto;
+  background-color: #cb5c0d;
+  border: solid 2px #883000;
+  overflow: hidden;
+  z-index: 2;
+}
+#ara_kullanici img{
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin: 5px;
+  display: block;
+  float: left;
+  border: #883000 solid 2px;
+  border-radius: 7px;
+}
+#ara_anket_bilgileri_sag{
+  display: block;
+  float: right;
+  width: 200px;
+  margin-top: 5px;
+  max-height: 90px;
+  margin-bottom: 5px;
+}
+#ara_kullanici_bilgileri{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  widows: auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 90px;
+  float: left;
+  display: block;
+  overflow: hidden;
+}
+#ara_kullanici_bilgileri p{
+  margin: 5px;
+  display: block;
+}
+#ara_kullanici_bilgileri i{
+  width: 25px;
+}
+
+/* Bildirimler */
+#bildirimleri_sil:hover{
+  color: #000000;
+  cursor: pointer;
+}
+#bildirim_ac_kapa:hover{
+  color: #000000;
+}
+#bildirimler_dis{
+  width: 890px;
+  height: auto;
+  margin: 0 auto;
+  z-index: 20;
+  overflow: hidden;
+}
+#bildirim_main_dis{
+  width: 270px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-top: 0px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: block;
+}
+#bildirim_main_dis h3{
+  display: block;
+  margin: 0px 0 5px 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: dashed 1px #883000;
+}
+#bildirim_main_dis p{
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  float: left;
+  margin: 5px;
+  border-bottom: dashed 1px #883000;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  min-width: 890px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #883000;
+  color: #d7722c;
+  z-index: 10;
+}
+
+header a {
+  color: #d7722c;
+}
+
+header a:hover {
+  color: #000000;
+}
+
+#header_orta {
+  margin: 0 auto;
+  width: 890px;
+  height: 60px;
+  overflow: hidden;
+}
+
+#header_yazilar_sol {
+  display: block;
+  float: left;
+  font-size: 20px;
+  height: auto;
+  height: 60px;
+  overflow: hidden;
+}
+
+#header_yazilar_sol span {
+  display: block;
+  float: left;
+  padding: 10px;
+  margin: 9px 5px 9px 5px;
+}
+
+#header_yazilar_sol span:hover {
+  cursor: pointer;
+}
+
+#header_yazilar_sag {
+  float: right;
+  display: block;
+}
+
+#header_yazilar_sag img{
+  position: relative;
+  width: 23px;
+  height: 23px;
+  display: block;
+  float: left;
+  right: 5px;
+}
+#header_yazilar_sag img:hover{
+  width: 27px;
+  height: 27px;
+}
+
+#header_yazilar_sag h3 {
+  padding: 10px;
+  margin: 9px 5px 9px 5px;
+}
+
+#header_yazilar_sag h3:hover {
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 100%;
+  min-width: 890px;
+  height: 193px;
+  background-color: #FFFFFF;
+  color: #d7722c;
+  z-index: 1;
+}
+
+#footer_orta {
+  margin: 0 auto;
+  width: 890px;
+  height: 193px;
+  overflow: hidden;
+}
+
+#footer_hesaplar {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: block;
+}
+
+#footer_hesaplar img {
+  margin: 25px 10px;
+  width: 50px;
+  height: 50px;
+    border: solid 2px #883000;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+#footer_copyright {
+  margin-top: 53px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+
+#footer_copyright span {
+  display: block;
+}
+
+/* anasayfa_orta */
+#anasayfa_orta {
+  width: 890px;
+  display: block;
+  margin-top: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#anasayfa_orta_orta {
+  width: 500px;
+  display: block;
+  margin: 5px auto 0 auto;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+#anasayfa_orta_orta h1, #anasayfa_orta_orta h2, #anasayfa_orta_orta h3 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+#anasayfa_orta_orta img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 10px auto;
+  display: block;
+  border-radius: 7px;
+  border: solid 1px #883000;
+}
+
+#anasayfa_orta_orta span {
+  display: block;
+  width: 350px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+#anasayfa_orta_orta a {
+  width: 300px;
+  display: block;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+#anasayfa_giris_yap_button {
+  background-color: #FFFFFF;
+  color: #d7722c;
+}
+
+#anasayfa_hesap_ac_button {
+  background-color: #d7722c;
+  color: #FFFFFF;
+}
+
+#anasayfa_hesap_ac_button:hover {
+  background-color: #FFFFFF;
+  color: #d7722c;
+}
+
+#anasayfa_giris_yap_button:hover {
+  background-color: #d7722c;
+  color: #FFFFFF;
+}
+#anasayfa_takip_genel_secim{
+  font-weight: bold;
+}
+#anasayfa_takip_genel_secim:hover{
+  color: #000000;
+}
+
+/* Giriş ve kayıt ve şifremi unuttum bölümü */
+#giris_orta_orta {
+  width: 500px;
+  display: block;
+  margin: 5px auto 0 auto;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+#giris_orta_orta h1, #giris_orta_orta h2, #giris_orta_orta h3 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+#giris_orta_orta span {
+  display: block;
+  width: 350px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+#giris_orta_orta input, #giris_orta_orta button {
+  width: 300px;
+  height: 30px;
+  display: block;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  color: #883000;
+  font-weight: bold;
+}
+
+#giris_orta_orta button {
+  margin-bottom: 30px;
+}
+
+#giris_orta_orta button:hover {
+  cursor: pointer;
+  background-color: #883000;
+  color: #FFFFFF;
+}
+
+#giris_orta_orta img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 30px auto;
+  display: block;
+  border-radius: 7px;
+  border: solid 1px #883000;
+}
+
+#sifremi_unuttum_button {
+  width: 300px;
+  display: block;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #d7722c;
+  color: #FFFFFF;
+}
+
+#sifremi_unuttum_button:hover {
+  background-color: #FFFFFF;
+  color: #d7722c;
+}
+
+/* anasayfa- giriş yapılmış */ 
+#anasayfa_giris_orta_orta{
+  width: 890px;
+  display: block;
+  margin: 5px auto 0 auto;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+}
+#anasayfa_giris_ust_ust{
+  display: block;
+  width: 886px;
+  height: auto;
+  overflow: hidden;
+  border: solid 2px #883000;
+  background-color: #cb5c0d;
+  margin-top: 10px;
+  text-align: center;
+}
+#anasayfa_giris_ust_ust h3{
+  margin: 10px;
+  display: block;
+}
+#anasayfa_giris_ust_ust span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+#anasayfa_giris_sol_genel{
+  margin-top: 10px;
+  float: left;
+  display: block;
+  width: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#anasayfa_giris_sag_genel{
+  margin-top: 10px;
+  display: block;
+  width: 580px;
+  height: auto;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#anasayfa_giris_etiketler {
+  width: 296px;
+  overflow: hidden;
+  border: solid 2px #883000;
+  background-color: #cb5c0d;
+  text-align: left;
+}
+
+#anasayfa_giris_etiketler h3 {
+  width: 276px;
+  margin: 10px 10px;
+  display: block;
+  text-align: left;
+}
+
+#anasayfa_giris_etiketler span {
+  width: 276px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Profil */
+#profil_orta_orta {
+  width: 890px;
+  display: block;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+#profil_ust {
+  position: relative;
+  display: block;
+  width: 890px;
+  height: 300px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#profil_ust_kapak_foto {
+  display: block;
+  margin: 0;
+  width: 890px;
+  height: 270px;
+  z-index: 2;
+}
+
+#profil_kapak_foto {
+  width: 886px;
+  height: 298px;
+  overflow: hidden;
+  border: solid 2px #883000;
+  border-top: 0;
+}
+
+#profil_ust_profil_foto {
+  position: relative;
+  top: -130px;
+  margin-left: 10px;
+  display: block;
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+#profil_profil_foto {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: solid 2px #883000;
+  border-radius: 7px;
+  z-index: 3;
+}
+
+#profil_ust_kullanici_adi {
+  display: block;
+  position: relative;
+  top: -32px;
+  margin-left: 8px;
+  float: left;
+  overflow: hidden;
+  height: 55px;
+}
+
+#profil_kullanici_adi_h2 {
+  margin: 0;
+  padding: 1.4px;
+  z-index: 3;
+}
+
+#profil_kullanici_adi_span {
+  margin: 0;
+  margin-left: 10px;
+  padding: 1.2px;
+  z-index: 3;
+}
+
+#profil_sol_genel {
+  float: left;
+  display: block;
+  margin-top: 10px;
+  width: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#profil_kullanici_bilgileri {
+  width: 296px;
+  overflow: hidden;
+  border: solid 2px #883000;
+  background-color: #cb5c0d;
+  text-align: left;
+}
+#reklam_dikey{
+  width: 296px;
+  overflow: hidden;
+  border: solid 2px #883000;
+  background-color: #cb5c0d;
+  text-align: left;
+  margin-top: 10px;
+  display: block;
+}
+#reklam_baslik{
+  width:276px;
+  border-bottom: 1px solid #883000;
+  margin: 0;
+  padding: 10px; 
+}
+#reklam_dikey_icerik{
+  max-width: 296px;
+  margin: 10px 0 0 0;
+  background-color: red;
+  display: block;
+  overflow: hidden;
+}
+
+#profil_kullanici_bilgileri h3 {
+  width: 276px;
+  margin: 10px 10px;
+  display: block;
+  text-align: left;
+}
+
+#profil_kullanici_bilgileri span {
+  width: 276px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}
+
+#profil_kullanici_bilgileri button{
+  
+  border: solid 2px #883000;
+  background-color: #cb5c0d;
+  margin: 10px 10px 0px 10px;
+  width: 276px;
+  height: 30px;
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#profil_kullanici_bilgileri button:hover{
+  cursor: pointer;
+  background-color:  #883000;
+}
+
+#profil_sag_genel {
+  margin-top: 10px;
+  display: block;
+  width: 580px;
+  height: auto;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#anket_olustur {
+  position: relative;
+  float: left;
+  width: 576px;
+  display: block;
+  height: auto;
+  background-color: #cb5c0d;
+  border: solid 2px #883000;
+  overflow: hidden;
+}
+
+#anket_olustur h3, #anket_olustur h4 {
+  display: block;
+    text-align: left;
+  position: relative;
+  width: 576px;
+  margin: 10px 10px;
+}
+
+#anket_olustur h3:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+#anket_olustur input {
+  width: 550px;
+  max-width: 550px;
+  height: 30px;
+  margin: 2px 10px;
+  border: solid 2px #883000;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.img_file_input{
+  padding-top: 10px;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #883000;
+  font-weight: bold;
+}
+.img_file_input:hover{
+  cursor: pointer;
+}
+
+#anket_olustur textarea {
+  min-width: 546px;
+  width: 546px;
+  max-width: 546px;
+  min-height: 100px;
+  max-height: 300px;
+  margin: 2px 10px;
+  border: solid 2px #883000;
+  border-radius: 7px;
+}
+
+#anket_olustur button{
+  width: 300px;
+  height: 36px;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin: 10px;
+  border: solid 2px #883000;
+  color: #883000;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+#anket_olustur button:hover{
+  color: #FFFFFF;
+  cursor: pointer;
+    background-color: #cb5c0d;
+}
+#anket_olustur_video{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 32px;
+  height: 26.25px;
+  padding-top: 5.75px;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #883000;
+    border: solid 2px #883000;
+}
+#anket_olustur_video:hover{
+  color: #883000;
+  cursor: pointer;
+  background-color: #cb5c0d;
+}
+
+#anket_olustur_ekle{
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 20px;
+  width: 32px;
+  height: 26.25px;
+  padding-top: 5.75px;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #883000;
+    border: solid 2px #883000;
+}
+#anket_olustur_ekle:hover{
+background-color: #cb5c0d;
+  color: #883000;
+  cursor: pointer;
+}
+
+#anket_olustur_yukle{
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 20px;
+  width: 32px;
+  height: 26.25px;
+  padding-top: 5.75px;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #883000;
+    border: solid 2px #883000;
+}
+#anket_olustur_yukle:hover{
+background-color: #cb5c0d;
+  color: #883000;
+  cursor: pointer;
+}
+
+#anket_gonderileri_profil{
+  margin-top: 10px;
+  position: relative;
+  float: left;
+  width: 576px;
+  display: block;
+  height: auto;
+  background-color: #cb5c0d;
+  border: solid 2px #883000;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#anket_gonderileri_cevaplar{
+  float: left;
+  margin: 4px 2px;
+}
+#anket_sayfalar_profil{
+  margin-top: 10px;
+  min-height: 30px;
+  position: relative;
+  float: left;
+  width: 576px;
+  display: block;
+  height: auto;
+  background-color: #cb5c0d;
+  border: solid 2px #883000;
+  overflow: hidden;
+}
+#anket_paylasilmamis_profil{
+  padding: 7px 0;
+  margin-left: 10px;
+}
+#anket_gonderi_profil_resmi{
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  float: left;
+  margin: 5px 5px 5px 5px;
+  border: solid 2px #883000;
+  border-radius: 7px;
+  display: block;
+}
+#anket_gonderi_profil_resmi img{
+  width: 90px;
+  height: 90px;
+  margin: 0;
+  border-radius: 7px;
+}
+#anket_gonderi_kullanici_bilgileri{
+  float: left;
+  margin-top: 5px;
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  height: 40px;
+}
+#anket_gonderi_kullanici_bilgileri a:hover{
+  color: #000000;
+}
+#anket_gonderi_bilgileri{
+  margin-top: 5px;
+  display: block;
+ width: 267px;
+ height: auto;
+ float: left;
+ text-align: right;
+ margin-right: 5px;
+ height: 40px;
+}
+#anket_gonderi_bilgileri a:hover{
+  color: #000000;
+}
+#anket_begeni_dbegeni{
+  display: block;
+  float: left;
+  width: 472px;
+  overflow: hidden;
+}
+#anket_begeni_dbegeni i:hover{
+  color: #000000;
+  cursor: pointer;
+}
+#anket_secenekleri{
+  display: block;
+  float: left;
+  min-width: 576px;
+  margin: 0;
+  overflow: hidden;
+
+}
+#anket_sonuclar_zar{
+  display: block;
+  float: left;
+  width: 472px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+#anket_aciklama{
+  width: 578px;
+  overflow: hidden;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+#anket_aciklama span{
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+  display: block;
+  padding: 5px;
+}
+#anket_secenekleri img{
+  float: left;
+  display: block;
+  margin-left: 2px;
+  margin-top: 2px;
+  border-radius: 7px;
+  border: solid 2px #883000;
+}
+#anket_kare_resim{
+  width: 280px;
+  height: 185px;
+  overflow: hidden;
+  float: left;
+  display: block;
+  margin-left: 2px;
+  margin-top: 2px;
+  border-radius: 7px;
+  border: solid 2px #883000;
+  background-color: #883000;
+}
+#anket_kare_resim img{
+   width: 185px;
+   height: 185px;
+   border:0;
+   margin-left:47.5px;
+   margin-top:0px;
+   border: solid 2px #883000;
+   border-top: 0px;
+   background-color: #883000;
+   border-bottom: 0px;
+}
+#anket_secenekleri iframe{
+  float: left;
+  display: block;
+  margin-left: 2px;
+  margin-top: 2px;
+  border-radius: 7px;
+  border: solid 2px #883000;
+}
+
+#anket_resim_cevap{
+  display: block;
+  width: 100%;
+  float: left;
+  height: 30px;
+  background-color: #883000;
+  margin-top: 5px;
+  margin-left: 2px;
+  border-radius: 7px;
+    border: solid 2px #883000;
+}
+#anket_resim_cevap:hover{
+    background-color: #cb5c0d;
+      border: solid 2px #883000;
+      cursor: pointer;
+}
+#anket_resim_cevap span{
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  text-align: center;
+  overflow: hidden;
+
+}
+#anket_resim_cerceve{
+  overflow: hidden;
+  float: left;
+  margin-bottom: 7px;
+}
+
+/* Ayarlar */
+#ayarlar_orta_orta {
+  width: 500px;
+  display: block;
+  margin: 5px auto 0 auto;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+}
+
+#ayarlar_orta_orta h1, #ayarlar_orta_orta h2, #ayarlar_orta_orta h3 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+#ayarlar_orta_orta span {
+  display: block;
+  width: 350px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+#ayarlar_orta_orta input, #ayarlar_orta_orta button {
+  width: 300px;
+  height: 30px;
+  display: block;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  color: #883000;
+  font-weight: bold;
+}
+#ayarlar_bilgisayardan_yukle{
+  width: 300px;
+  height: 25px;
+  display: block;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  color: #883000;
+  overflow: hidden;
+  padding-top: 10px;  
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+#ayarlar_bilgisayardan_yukle:hover{
+  cursor: pointer;
+}
+
+#ayarlar_orta_orta button {
+  margin-bottom: 30px;
+}
+
+#ayarlar_orta_orta button:hover {
+  cursor: pointer;
+  background-color: #883000;
+  color: #FFFFFF;
+}
+
+#ayarlar_orta_orta img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 30px auto;
+  display: block;
+  border-radius: 7px;
+  border: solid 1px #883000;
+}
+#ayarlar_orta_orta textarea{
+  max-width: 300px;
+  max-height: 200px;
+  min-width: 300px;
+  min-height: 200px;
+  display: block;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  color: #883000;
+}
+#ayarlar_inputlar{
+  width: 500px;
+  margin: 0;
+}
+#ayarlar_inputlar i {
+  position: relative;
+  left: 60px;
+  float: left;
+  margin-top: 8px;
+  width: 0px;
+  height: 30px;
+  display: inline-block;
+}
+.uploadpp{
+  padding-top: 8px;
+}
+.uploadkp{
+  padding-top: 8px;
+}
+
+/* Anket yorum */
+#anket_yorumlar{
+  margin-top: 10px;
+  position: relative;
+  float: left;
+  width: 576px;
+  display: block;
+  height: auto;
+  background-color: #cb5c0d;
+  border: solid 2px #883000;
+  overflow: hidden;
+  z-index: 2;
+}
+#anket_yorum_yap{
+  width: 556px;
+  overflow: hidden;
+  margin: 0 10px;
+  display: block;
+} 
+#anket_yorum_yap textarea{
+  min-width: 550px;
+  max-width: 550px;
+  width: 550px;
+  min-height: 90px;
+  height: 90px;
+  max-height: 90px;
+  color: #883000;
+  border-radius: 7px;
+}
+#anket_yorum_yap button{
+  width: 556px;
+  height: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #883000;
+  border-radius: 7px;
+  border: solid 2px #883000;
+}
+#anket_yorum_yap button:hover{
+  background-color: #cb5c0d;
+  cursor: pointer;
+}
+#anket_yazilan_yorumlar{
+  width: 556px;
+  overflow: hidden;
+  margin: 0px 10px 10px 10px;
+  display: block;
+}
+#anket_yazilan_yorumlar a{
+  font-weight: bold;
+}
+#anket_yazilan_yorumlar a:hover{
+  color: #000000;
+}
+
+
+/* 404 İçin Bilgisayar */
+ 
+#mobil_anasayfa_orta {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#mobil_anasayfa_orta_orta {
+  width: 350px;
+  display: block;
+  margin: 5px auto 0 auto;
+  min-height: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#mobil_anasayfa_orta_orta h1, #mobil_anasayfa_orta_orta h2, #mobil_anasayfa_orta_orta h3 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+#mobil_anasayfa_orta_orta img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 10px auto;
+  display: block;
+  border-radius: 7px;
+  border: solid 1px #883000;
+}
+
+#mobil_anasayfa_orta_orta span {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+#mobil_anasayfa_orta_orta a {
+  width: 300px;
+  display: block;
+  border: solid 1px #883000;
+  border-radius: 7px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+#mobil_anasayfa_giris_yap_button {
+  background-color: #FFFFFF;
+  color: #d7722c;
+}
+
+#mobil_anasayfa_hesap_ac_button {
+  background-color: #d7722c;
+  color: #FFFFFF;
+}
+
+#mobil_anasayfa_hesap_ac_button:hover {
+  background-color: #FFFFFF;
+  color: #d7722c;
+}
+
+#mobil_anasayfa_giris_yap_button:hover {
+  background-color: #d7722c;
+  color: #FFFFFF;
+}
+#mobil_anasayfa_takip_genel_secim{
+  font-weight: bold;
+}
+#mobil_anasayfa_takip_genel_secim:hover{
+  color: #000000;
+}

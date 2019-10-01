@@ -1,0 +1,102 @@
+RewriteEngine On
+ErrorDocument 400 /404
+ErrorDocument 401 /404
+ErrorDocument 402 /404
+ErrorDocument 403 /404
+ErrorDocument 404 /404
+ErrorDocument 405 /404
+ErrorDocument 406 /404
+ErrorDocument 407 /404
+ErrorDocument 408 /404
+ErrorDocument 409 /404
+ErrorDocument 410 /404
+ErrorDocument 411 /404
+ErrorDocument 412 /404
+ErrorDocument 413 /404
+ErrorDocument 414 /404
+ErrorDocument 500 /404
+ErrorDocument 501 /404
+ErrorDocument 502 /404
+ErrorDocument 503 /404
+ErrorDocument 504 /404
+ErrorDocument 505 /404
+
+Options -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^404$ 404.php [NC,L]
+
+RewriteRule ^onay-maili-gonder$ onay-maili-gonder.php [NC,L]
+
+RewriteRule ^hesap-olustur$ hesap-olustur.php [NC,L]
+RewriteRule ^hesap-olustur-kontrol$ hesap-olustur-kontrol.php [NC,L]
+
+RewriteRule ^sitemap.xml$ sitemap.php [L,NC]
+RewriteRule ^sitemap-anketler.xml$ sitemap-anketler.php [L,NC]
+RewriteRule ^sitemap-hesaplar.xml$ sitemap-hesaplar.php [L,NC]
+RewriteRule ^sitemap-genel.xml$ sitemap-genel.php [L,NC]
+
+RewriteRule ^giris-yap$ giris-yap.php [NC,L]
+RewriteRule ^giris-yap-kontrol$ giris-yap-kontrol.php [NC,L]
+
+RewriteRule ^kullanim-kosullari$ kullanim-kosullari.php [NC,L]
+RewriteRule ^hakkimizda$ hakkimizda.php [NC,L]
+RewriteRule ^cikis$ cikis.php [NC,L]
+
+RewriteRule ^sifremi-unuttum$ sifremi-unuttum.php [NC,L]
+RewriteRule ^sifremi-unuttum-kontrol$ sifremi-unuttum-kontrol.php [NC,L]
+
+RewriteRule ^sifre-yenile-kontrol$ sifre-yenile-kontrol.php [NC,L]
+RewriteRule ^anket-gonder$ anket-gonder.php [NC,L]
+RewriteRule ^ayarlar$ ayarlar.php [NC,L]
+RewriteRule ^ayarlar-kontrol$ ayarlar-kontrol.php [NC,L]
+RewriteRule ^yorum-yap$ yorum-yap.php [NC,L]
+
+RewriteRule ^ara/(.*)/(.*)$ ara.php?ara=$1&sayfa=$2 [QSA,L]
+RewriteRule ^ara/(.*)$ ara.php?ara=$1&sayfa=1 [QSA,L]
+
+RewriteRule ^hesap-onay/(.*)-(.*)$ hesap_onay.php?kadi=$1&kontrol=$2 [QSA,L]
+RewriteRule ^sifre-yenile/(.*)-(.*)$ sifre-yenile.php?kadi=$1&kontrol=$2 [QSA,L]
+RewriteRule ^profil/(.*)/(.*)$ profil.php?kadi=$1&sayfa=$2 [QSA,L]
+RewriteRule ^profil/(.*)$ profil.php?kadi=$1&sayfa=1 [QSA,L]
+
+
+RewriteRule ^anasayfa$ index.php?durum=t&sayfa=1 [QSA,L]
+RewriteRule ^anasayfa/(.*)/(.*)$ index.php?durum=$1&sayfa=$2 [QSA,L]
+RewriteRule ^$ index.php?durum=t&sayfa=1 [NC,L]
+
+RewriteRule ^etiket/(.*)/(.*)$ etiket.php?etiket=$1&sayfa=$2 [QSA,L]
+RewriteRule ^etiket/(.*)$ etiket.php?etiket=$1&sayfa=1 [QSA,L]
+
+RewriteRule ^anket/(.*)/(.*)$ solo-anket.php?anket_no=$1&sayfa=$2 [QSA,L]
+RewriteRule ^anket/(.*)$ solo-anket.php?anket_no=$1&sayfa=1 [QSA,L]
+
+
+RewriteRule ^mobil/anasayfa$ mobil/index.php?durum=t&sayfa=1 [QSA,L]
+RewriteRule ^mobil/anasayfa/(.*)/(.*)$ mobil/index.php?durum=$1&sayfa=$2 [QSA,L]
+RewriteRule ^mobil$ mobil/index.php?durum=t&sayfa=1 [NC,L]
+RewriteRule ^mobil/$ mobil/index.php?durum=t&sayfa=1 [NC,L]
+RewriteRule ^mobil/hakkimizda$ mobil/hakkimizda.php [NC,L]
+RewriteRule ^mobil/kullanim-kosullari$ mobil/kullanim-kosullari.php [NC,L]
+RewriteRule ^mobil/giris-yap$ mobil/giris-yap.php [NC,L]
+RewriteRule ^mobil/giris-yap-kontrol$ mobil/giris-yap-kontrol.php [NC,L]
+RewriteRule ^mobil/hesap-olustur$ mobil/hesap-olustur.php [NC,L]
+RewriteRule ^mobil/hesap-olustur-kontrol$ mobil/hesap-olustur-kontrol.php [NC,L]
+RewriteRule ^mobil/cikis$ mobil/cikis.php [NC,L]
+RewriteRule ^mobil/sifremi-unuttum$ mobil/sifremi-unuttum.php [NC,L]
+RewriteRule ^mobil/sifremi-unuttum-kontrol$ mobil/sifremi-unuttum-kontrol.php [NC,L]
+RewriteRule ^mobil/sifre-yenile/(.*)-(.*)$ mobil/sifre-yenile.php?kadi=$1&kontrol=$2 [QSA,L]
+RewriteRule ^mobil/sifre-yenile-kontrol$ mobil/sifre-yenile-kontrol.php [NC,L]
+RewriteRule ^mobil/hesap-onay/(.*)-(.*)$ mobil/hesap-onay.php?kadi=$1&kontrol=$2 [QSA,L]
+RewriteRule ^mobil/etiket/(.*)/(.*)$ mobil/etiket.php?etiket=$1&sayfa=$2 [QSA,L]
+RewriteRule ^mobil/etiket/(.*)$ mobil/etiket.php?etiket=$1&sayfa=1 [QSA,L]
+RewriteRule ^mobil/anket/(.*)/(.*)$ mobil/solo-anket.php?anket_no=$1&sayfa=$2 [QSA,L]
+RewriteRule ^mobil/anket/(.*)$ mobil/solo-anket.php?anket_no=$1&sayfa=1 [QSA,L]
+RewriteRule ^mobil/profil/(.*)/(.*)$ mobil/profil.php?kadi=$1&sayfa=$2 [QSA,L]
+RewriteRule ^mobil/profil/(.*)$ mobil/profil.php?kadi=$1&sayfa=1 [QSA,L]
+RewriteRule ^mobil/ayarlar$ mobil/ayarlar.php [NC,L]
+RewriteRule ^mobil/ara/(.*)/(.*)$ mobil/ara.php?ara=$1&sayfa=$2 [QSA,L]
+RewriteRule ^mobil/ara/(.*)$ mobil/ara.php?ara=$1&sayfa=1 [QSA,L]
+RewriteRule ^mobil/onay-maili-gonder$ mobil/onay-maili-gonder.php [NC,L]
